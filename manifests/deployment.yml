@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: dubsdevglasgowsubwayapi 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dubsdevglasgowsubwayapi
+  template:
+    metadata:
+      labels:
+        app: dubsdevglasgowsubwayapi 
+    spec:
+      containers:
+        - name: dubsdevglasgowsubwayapi 
+          image: dubsacr01.azurecr.io/dubsdevglasgowsubwayapi
+          ports:
+          - containerPort: 80
