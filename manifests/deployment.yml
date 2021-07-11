@@ -16,4 +16,4 @@ spec:
         - name: dubsdevglasgowsubwayapi 
           image: dubsacr01.azurecr.io/dubsdevglasgowsubwayapi
           ports:
-          - containerPort: 80
+          - containerPort: 5000
